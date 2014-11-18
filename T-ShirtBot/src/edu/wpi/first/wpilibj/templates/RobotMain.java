@@ -48,7 +48,8 @@ public class RobotMain extends IterativeRobot {
     	
     }
     
-    public void teleopInit(){
+    @SuppressWarnings("deprecation")
+	public void teleopInit(){
     	shooter.shotIncrement = SmartDashboard.getDouble("shotIncrement");
     	shooter.randomShooting = SmartDashboard.getBoolean("randomShooting");
     	if (!shooter.randomShooting)

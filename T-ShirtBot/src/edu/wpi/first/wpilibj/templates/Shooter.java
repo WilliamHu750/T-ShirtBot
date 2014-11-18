@@ -1,9 +1,9 @@
 package edu.wpi.first.wpilibj.templates;
 
-import edu.wpi.first.wpilibj.DigitalInput;
+import java.util.Random;
+
 import edu.wpi.first.wpilibj.Solenoid;
 import edu.wpi.first.wpilibj.Timer;
-import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
 
 public class Shooter {
 	Timer shootTimer;
@@ -34,7 +34,7 @@ public class Shooter {
 	}
 	
 	public double randomDelay(double increment){
-		return increment + increment*Math.random();
+		return increment + increment* (new Random().nextDouble());
 	}
 	
 	public void shootMode(boolean run)

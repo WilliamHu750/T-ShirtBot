@@ -2,7 +2,6 @@
 package edu.wpi.first.wpilibj.templates;
 import edu.wpi.first.wpilibj.RobotDrive;
 import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
-import java.util.*;
 import edu.wpi.first.wpilibj.Timer;
 
 
@@ -29,15 +28,15 @@ public class GearTrain extends RobotDrive {
     double correction=  0.2;//positive value b/t 0.0 and 1.0
     double gAlpha; //driveAlpha while using gyro, 0.1 works well for now
     
-    private final double ROBOT_DIAMETER_FT = 2.268;
-    private final double ROBOT_RADIUS_FT = ROBOT_DIAMETER_FT/2;
+//    private final double ROBOT_DIAMETER_FT = 2.268;
+//    private final double ROBOT_RADIUS_FT = ROBOT_DIAMETER_FT/2;
     
     Timer time;
     
     double trim = 0.853;
-    private double stepLength = 0.0;
-    private double stepSpeed = 0.0;
-    private double stepAngle = 0.0;
+//    private double stepLength = 0.0;
+//    private double stepSpeed = 0.0;
+//    private double stepAngle = 0.0;
     double angleThreshold;
     
     
